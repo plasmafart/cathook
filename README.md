@@ -1,35 +1,3 @@
-# IMPORTANT - UNMAINTAINED
-
-## This project is no longer maintained. Do not contact me about bugs in the software, don't open pull requests, make a fork instead (or find a maintained one)
-
-# Cathook Training Software
-![banner](http://i.imgur.com/w96wdtE.png)
-
-## Discord Server
-The discord server is depreciated due to discord taking action.    
-Please use the new [Official Telegram Group](https://t.me/nullifiedcat).    
-[Official Discord Server](https://discord.gg/kvNVNSX)
-
-cathook is a training software designed for Team Fortress 2 for Linux. cathook includes some joke features like
-
-* Backpack.TF API integration with playerlist GUI, allowing you to see players' inventory values
-* Always/Never spycrab
-* Ignore Hoovy
-* 100% Casual/Comp coin flip
-* Encrypted chat
-* Emoji ESP
-* Fidget Spinner crosshair
-* Chance to get manually VAC banned by Valve
-
-and a lot of useful features, including
-
-* Anti Backstab with option to say "No" voice command when spy tries to backstab you
-* Heal Arrows exploit (overheal an enemy for 1200 health with single huntsman arrow, you can also do it with buildings!)
-* Extremely customizable spam (you can make spam lines that'll include name of random dead enemy pyro or sniper)
-* Follow Bots
-* Working crit hack
-
-[FULL LIST OF FEATURES HERE](https://github.com/nullifiedcat/cathook/wiki/List-of-features)
 
 # INSTALLATION
 
@@ -70,7 +38,7 @@ If you don't use Ubuntu or Arch (or if Arch script gets outdated), here's the li
 
 Cathook installation script:
 ```bash
-git clone --recursive https://github.com/nullifiedcat/cathook && cd cathook && bash build-tf2
+git clone --recursive https://github.com/plasmafart/cathook && cd cathook && bash build-tf2
 ```
 
 **Errors while installing?**
@@ -92,15 +60,4 @@ Cathook requires a special data folder (contains shaders, font files, walkbot pa
 `sudo ./attach` to attach cathook into TF2. Optionally, you can provide an argument number (0-n - #) to provide the TF2 process ID (for bots).
 
 `sudo ./attach-backtrace` to attach and print backtrace incase TF2 crashes. Some users report that this causes FPS drop in-game. This is recommended to grab a log of what went wrong if Cathook is crashing on you.
-
-## Followbots (outdated)
-`cathook-ipc-server` allows you to run and control Followbots to do your evil bidding in-game. The installation for Followbots is quite complex, and will not be covered on this page. Obviously, you must have several user accounts ready to run TF2.  
-A guide for Followbots can be found here: [How to setup and use followbots.](https://www.youtube.com/watch?v=kns5-nw7xUg)  
-You may also ask someone in our discord server to help you out.
-
-The installation script is as followed:
-```bash
-git clone --recursive https://github.com/nullifiedcat/cathook-ipc-server && cd cathook-ipc-server && make -j4
-```
-To run the Followbot server, run `./bin/cathook-ipc-server`. You can also use `./bin/cathook-ipc-server &>/dev/null &` to run it in background.
 
