@@ -186,7 +186,6 @@ void hack::Initialize() {
 
 	logging::Info("Initializing...");
 	srand(time(0));
-	prctl(PR_SET_DUMPABLE,0,42,42,42);
 	sharedobj::LoadAllSharedObjects();
 	CreateInterfaces();
 	CDumper dumper;
